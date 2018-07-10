@@ -42,6 +42,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.synconset.R;
 import com.synconset.FakeR;
 import android.app.Activity;
 import android.app.ActionBar;
