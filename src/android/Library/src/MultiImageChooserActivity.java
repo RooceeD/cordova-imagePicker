@@ -42,7 +42,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import android.R;
 import com.synconset.FakeR;
 import android.app.Activity;
 import android.app.ActionBar;
@@ -174,8 +173,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle(getString(R.string.processing_images_header));
-        progress.setMessage(getString(R.string.processing_images_message));
+        progress.setTitle(getString(android.R.string.processing_images_header));
+        progress.setMessage(getString(android.R.string.processing_images_message));
     }
     
     @Override
@@ -190,9 +189,9 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         if (maxImages == 0 && isChecked) {
             isChecked = false;
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(getString(R.string.maximum_selection_count_error_header));
-            builder.setMessage(getString(R.string.maximum_selection_count_error_message, maxImageCount));
-            builder.setPositiveButton(getString(R.string.done), new DialogInterface.OnClickListener() {
+            builder.setTitle(getString(android.R.string.maximum_selection_count_error_header));
+            builder.setMessage(getString(android.R.string.maximum_selection_count_error_message, maxImageCount));
+            builder.setPositiveButton(getString(android.R.string.done), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) { 
                     dialog.cancel();
                 }
