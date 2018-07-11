@@ -174,7 +174,7 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         updateAcceptButton();
         progress = new ProgressDialog(this);
         progress.setTitle(getString(fakeR.getId("string", "processing_images_header")));
-        progress.setMessage(getString(android.R.string.processing_images_message));
+        progress.setMessage(getString(fakeR.getId("string", "processing_images_message"));
     }
     
     @Override
@@ -189,9 +189,9 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         if (maxImages == 0 && isChecked) {
             isChecked = false;
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(getString(android.R.string.maximum_selection_count_error_header));
-            builder.setMessage(getString(android.R.string.maximum_selection_count_error_message, maxImageCount));
-            builder.setPositiveButton(getString(android.R.string.done), new DialogInterface.OnClickListener() {
+            builder.setTitle(getString(fakeR.getId("string", "maximum_selection_count_error_header"));
+            builder.setMessage(getString(fakeR.getId("string", "maximum_selection_count_error_message"), maxImageCount));
+            builder.setPositiveButton(getString(fakeR.getId("string", "done"), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) { 
                     dialog.cancel();
                 }
